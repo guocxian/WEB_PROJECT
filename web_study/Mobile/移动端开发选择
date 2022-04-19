@@ -1,0 +1,38 @@
+两种方案：
+单独为手机开发
+响应式开发
+---------------------------------
+单独制作移动端的移动端常见布局：
+1、流式布局（百分比布局）
+2、flex弹性布局(强烈推荐)
+3、less+rem+媒体查询布局
+4、混合布局
+
+响应式页面兼容移动端：
+1、媒体查询 
+2、bootstarp
+---------------------------------
+
+一、流式布局（百分比布局）
+1、核心：宽度根据百分比设置
+max-width   min-width  
+
+二、flex布局
+1、操作简单，移动端应用很广泛
+2、pc端支持比较差
+3、flex box的缩写，任何一个容器都可以指定flex布局
+4、flex给父元素后,子元素float\clear\vertical-align失效
+5、采用flex布局的元素称为flex容器，里面的元素称为flex项目
+6、给父亲添加flex，控制孩子的布局
+父亲属性：
+flex-direction:row（默认的方向）\row-reverse\cloumn\cloumn-reverse设置主轴的方向(元素的排列跟主轴)
+justify-content:flex-start\flex-end\center\space-around\space-between设置【主轴元素】的排列方式
+flex-wrap:nowrap\wrap设置子元素换不换行
+align-items:center\flex-start\flex-end\strech侧轴变化（单行元素的情况）
+align-contet:flex-start\flex-end\flex-between\space-around设置侧轴子元素的排列(只是多行元素)
+flex-flow:row wrap
+flex:子项目分配【剩余空间·】，多少份
+align-self:flex-end\flex-start\控制【侧轴】的子项目
+order:默认是0.从小到大排序定义项目的顺序，数值小靠前
+
+

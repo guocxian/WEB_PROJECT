@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[value] {
+            color: pink;
+        }
+
+        input[type=password] {}
+
+        类名以con结尾 div[class$=con] {}
+
+        类名以con开头 div[class^=con] {}
+
+        选择ul里面的第一个元素 ul li:first-child {
+            color: pink;
+        }
+
+        ul li:last-child {
+            color: pink;
+        }
+
+        中间的n可以是公式（n从零开始） even偶数 odd奇数 n 选择所有的孩子 2n 就是偶数 2n+1 就是奇数 n+3从第三个开始 -n+5 前5个包含第五个 ul li:nth-child(2) {
+            color: pink;
+        }
+
+        选择的是div的第一个 section div:nth-of-type(1) {
+            color: aqua;
+        }
+
+        选不出来什么，第一个孩子不是div section div:nth-child(1) {
+            color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+    css3新增的选择器
+    1、属性选择器
+    <input type="text">
+    <input type="text" value="请输入用户名">
+    <input type="password">
+    2、结构伪类选择器
+    结构伪类选择器主要根据文档结构来选择元素，常用于父级选择器里面的子元素
+    <ul>
+        <li>fhr </li>
+        <li>fqr </li>
+        <li>f4r </li>
+        <li>fr43e</li>
+        <li>3q</li>
+    </ul>
+
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+    3、伪元素
+    css创建新的行内元素，文档中不出现
+    element（父盒子）::before 父盒子的里面的前面
+    必须具有content属性
+    element（父盒子）::after父盒子的里面的后面
+    必须具有content属性
+    伪元素选择器的权重为1
+    .clearfix:after{
+        content:''
+        display:block;
+        visability:hidden;
+    }
+
+    4、css3盒子模型
+    加padding和margin都不会改变盒子的大小
+    box-sizing:boeder-box
+
+    5、css3滤镜
+    n越大越模糊
+    还有其他的应用
+    filter:blur(n)
+
+    6、计算函数 calc
+    with:calc(150px+30px)
+    子盒子永远比父盒子小30px
+    with:calc(100%-30px)
+
+   7、过渡
+   过渡动画：从一个状态到另一个状态
+   transition:变化的属性，花费时间，运动曲线，何时开始
+   div{
+       with:200px;
+       transition:with(all) .5s;
+   }
+   div:hover{
+       with:400px
+   }
+
+</body>
+
+</html>

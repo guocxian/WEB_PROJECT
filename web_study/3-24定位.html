@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1、固定的位置用不了这个浮动
+    2、定位随意移动盒子的位置
+    3、定位方式+边偏移
+    position:static(相当于标准流)\relative\fixed\absolution
+    偏移：top\bottom\left\right
+    A、相对定位：不脱标、相对自己移动，给绝对定位当爹
+    B、绝对定位:如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位
+        父亲（最近一级有定位的祖先元素）有定位的时候，孩子跑不出父亲的范围    
+        绝对定位脱离标准流，原来的位置不保留
+    （子绝父相）孩子用绝对定位灵活点，父亲最好用相对定位，用来占位置。
+    C、固定定位（可视窗口作为参考点，不受窗口缩放的影响）
+        所以和父元素没有关系，不随浏览器的滚动
+        脱离标准流，不占原来的位置
+        始终贴在版心边缘：
+        left:50%走到浏览器可视区的一半
+        margin-left:xxx px走到版心的右侧
+    D、粘性定位
+    position:sticky
+    top:0px(拖到0px时，就固定住了)
+    可视窗口参考点、保留位置
+    定位的叠放次序：
+    z-index:越大越靠上，默认是auto
+    只有定位的盒子才有这个属性
+
+    拓展：
+    加了绝对定位的盒子不能用margin：auto居中
+    left:50% magin-left:盒子宽度的一班  居中
+    垂直居中同理
+
+    行内元素加了绝对定位和固定定位和浮动相似：
+    1、可以直接设置宽高
+    2、块级元素如果添加相对定位和固定定位，不给宽度和高度，默认就是内容的大小（不是标准流那样默认父级宽度）
+
+    浮动的元素会压住下面的盒子，但是不会压住文字（浮动发明最初的目的就是插入围绕文字的）
+    绝对定位和固定定位会压住下面的文字 
+
+
+
+
+</body>
+
+</html>

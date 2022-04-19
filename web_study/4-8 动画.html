@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 先定义动画，在使用动画 */
+        @keyframes move {
+            /* from....to..也行，相当于0%---100% */
+            0%{
+                transform: rotate(10deg);
+            }
+            100%{
+                transform: rotate(100deg);
+            }
+        }
+        div{
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+            animation-name: move;
+            animation-duration: 2s;
+            /* 速度曲线 */
+            animation-timing-function: ease;
+            /* 延迟播放 */
+            animation-delay:1s;
+            /* 循环次数 */
+            animation-iteration-count: infinite;
+            /* 回来的方 */
+            animation-direction: normal;
+            /*鼠标经过停止播放状态 */
+            animation-play-state: paused;
+            /* 复合写法 */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        .map{
+            width: 747px;
+            height: 636px;
+            background:url() 
+        }
+        /* 多个动画可以重复 */
+</style>
+</head>
+<body>
+    <div class="donghua">
+
+    </div>
+    <div class="map">
+
+    </div>
+</body>
+</html>

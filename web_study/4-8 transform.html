@@ -1,0 +1,14 @@
+transform的用法
+<!-- 自身的一半 -->
+transform:translate(-50%,-50%);
+transform：rotate(45deg)
+transform-orgin:left bottom;(中心变为右下角)
+transform-orgin：50px 50px;
+1、x,y为高宽的倍数
+2、可以只写一个，宽高一样
+3、小于1就是缩放
+4、scale的优势：不会影响其他盒子位置，由中心想向外缩放（相比直接修改宽高的优势）
+transform:scale(x,y);
+
+先把位移放在前面
+transform：translate(-50%,-50%) rotate(90deg);

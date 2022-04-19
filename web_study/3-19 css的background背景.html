@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            width: 800px;
+            background: rgb(85, 135, 241);
+            /* 背景图片便于控制位置 图片会压住背景颜色*/
+            background-image: url(images/images.jpg);
+            background-repeat: repeat-x;
+            /* background-position: center top ; 和下面的顺序没有关系
+            可以一个参数，但是另外一个默认是居中 */
+            background-position: top center;
+            /* 背景的半透明 */
+            background:rgba(85, 135, 241,0.5)
+        } 
+
+        h3{
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+           
+            font-size: 14px;
+            font-weight: 400;
+            /* background:transparent url(images/images.jpg) no-repeat fixed left top; */
+            background-color: #fff;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+             /* 背景滚动scroll 
+            背景固定
+            */
+            background-attachment: fixed;
+            text-indent: 2.5em;
+           
+
+           
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div> -->
+    <h3>
+        学习成长平台
+    </h3>
+</body>
+
+</html>

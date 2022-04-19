@@ -1,0 +1,59 @@
+@import "common"; //可以把一个样式文件引入另外一个样式文件
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5; //1.5倍字体大小
+    font-family: Arial, Helvetica;
+}
+
+@basefont: 50;
+
+.search-top {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: (88rem / @basefont);
+    background-color: #ffbc00;
+
+
+    .classify {
+        width: (44rem / @basefont);
+        height: (70rem / @basefont);
+        margin: (11rem / @basefont) (25rem / @basefont) (7rem / @basefont) (24rem / @basefont);
+        background: url(../images/classify.png) no-repeat;
+        background-size: (44rem / @basefont) (70rem / @basefont);
+    }
+
+    .search {
+        flex: 1;
+        input {
+            // box-sizing: border-box;
+            outline: none;
+            width: 100%;
+            border: 0;
+            margin-top: (10rem / @basefont);
+            height: (66rem / @basefont);
+            border-radius: (33rem / @basefont);
+            background-color: #fff1c9;
+            font-size: (25rem / @basefont);
+            padding-left: (55rem / @basefont);
+            color: #b2a386;
+        }
+    }
+
+    .login {
+        width: (75rem / @basefont);
+        height: (70rem / @basefont);
+        font-size: (25rem / @basefont);
+        line-height: (70rem / @basefont);
+        text-align: center;
+        color: #fff;
+        margin: (10rem / @basefont);
+
+    }
+}

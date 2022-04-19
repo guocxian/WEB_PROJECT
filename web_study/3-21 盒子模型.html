@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            background-color: brown;
+        } */
+        /* 清除掉所有元素的内外边距 */
+        * {
+                margin: 0;
+                padding: 0;
+        }
+        .nav {
+            height: 41px;
+            width: 700px;
+            border-top: 3px solid yellow;
+            border-bottom: 1px solid rgb(246, 242, 242);
+            background-color: aliceblue;
+            /* 让块级元素水平居中，自动改变盒子左右margin的宽度 前提是盒子必须要有宽度
+               行内元素或者行内块元素的水平居中就是给父元素添加text-align:center
+            */
+
+            margin: auto;
+        }
+
+        .nav a {
+            height: 41px;
+            display: inline-block;
+            line-height: 41px;
+            padding: 0 20px;
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+        }
+
+        .nav a:hover {
+            background: rgb(141, 138, 138);
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- padding会加大盒子的大小 -->
+    <div>
+        padding会加大盒子的大小,此时盒子的宽度是240*240
+        导航栏每一块个大小不一样的时候，加padding就会更好一点
+    </div>
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">微博</a>
+        <a href="#">同城聊</a>
+        <a href="#">新浪导航</a>
+    </div>
+</body>
+
+</html>

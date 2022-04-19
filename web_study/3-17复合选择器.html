@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1、后代选择器 必须用空格隔开*/
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: aqua;
+        }
+
+        .nav li {
+            color: red;
+        }
+
+        /* 2、子元素选择器 选亲生的儿子*/
+        ol>li {
+            color: hotpink;
+        }
+
+        /* 3、并集选择器 选一组*/
+        div,
+        p,
+        .pig li {
+            color: blue
+        }
+
+        /* 4、伪类选择器 ，用：表示
+        必须有顺序*/
+        a:link {
+            color: red
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: green;
+        }
+        表单、获得光标的表单
+        input:focus {
+                color:red
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>
+            <a href="#">我是孙子</a>
+        <li>孙子</li>
+        </li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+    </ul>
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li> 佩奇</li>
+        <li>猪爸爸 </li>
+        <li> 猪妈妈</li>
+    </ul>
+     -->
+    <a href="https://www.bilibili.com/">我是小猪佩奇</a>
+    <a href="http://www.baidu.com/">guocxian</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    margin: 0 auto;
+    font-family: Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei";
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    background: #f2f2f2;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-index {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 540px;
+    width: 100%;
+    height: 44px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.search {
+    position: relative;
+    flex: 1;
+    padding-left: 25px;
+    height: 26px;
+    line-height: 24px;
+    margin: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 2px;
+    color: #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.search::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.user::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+    margin: 5px auto -2px;
+}
+
+.focus {
+    padding-top: 44px;
+}
+
+.focus img {
+    width: 100%;
+}
+
+.local-nav ul {
+    display: flex;
+    background-color: #ffff;
+    margin: 3px 4px;
+    border-radius: 8px;
+}
+
+.local-nav ul li {
+    flex: 1;
+}
+
+.local-nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local-nav li [class^="local-nav"] {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .local-nav-icon-2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-5 {
+    background-position: 0 -128px;
+}
+
+.local-nav nav {
+    overflow: hidden;
+    margin: 0 4px 3;
+    border-radius: 8px;
+
+}
+
+.nav-commom {
+    display: flex;
+    height: 88px;
+    background-color: #2eaae0;
+    background: -webkit-linear-gradient(left, )
+}
+
+.nav-commom:nth-child(1) {
+    background: -webkit-linear-gradient(left, #fa5a55, #FA994D)
+}
+
+.nav-commom:nth-child(2) {
+    background: -webkit-linear-gradient(left, #fa5a55, #FA994D)
+}
+
+.nav-commom:nth-child(3) {
+    background: -webkit-linear-gradient(left, #fa5a55, #FA994D)
+}
+
+.nav-itemd {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nav-itemd a {
+    flex: 1;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0, .2);
+}
+
+.nav-itemd a:nth-child(1) {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-itemd:nth-child(1) a {
+    border: 0;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+.nav-itemd:nth-child(-n+2) {
+    border-right: 1px solid white;
+}
+
+.nav-commom:nth-child(2) {
+    margin: 3px 0;
+}
+
+
+.subnav-entry ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background-color: skyblue;
+    margin: 0 4px;
+    padding: 5px 0;
+}
+
+.subnav-entry ul li {
+    /* 里面的可以写百分比 ，相对于父级写的*/
+    flex: 20%;
+    margin-top: 3px;
+}
+
+.subnav-entry ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry ul li a span {
+    font-size: 12px;
+    color: brown;
+}
+
+.subnav-entry-icon {
+    width: 28px;
+    height: 28px;
+    background-color: palevioletred;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+
+.sales-box {
+    border-top: 2px solid #ccc;
+    margin: 0 4px;
+    background-color: #fff;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+    position: relative;
+}
+.sales-hd h2::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) 0 -20px;
+    background-size: 79px auto;
+}
+
+.more {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    background: -webkit-linear-gradient(left, #fa5a55,#FA994D);
+    border-radius: 15px;
+    color: #fff;
+    padding: 3px 20px 3px 10px;
+}
+.more::after{
+    position: absolute;
+    top:8px ;
+    right: 10px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-right:1px solid rgb(243, 235, 235) ;
+    border-top: 1px solid rgb(230, 211, 211);
+}
+.row {
+    display: flex;
+}
+.row a {
+    flex:1;
+}
+.row a img {
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            color: red;
+        }
+
+        ul li {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 层叠性、继承、优先级
+    层叠性
+    1、两个一样的样式标签，哪个样式离标签近就是那个
+    继承
+    1、子标签继承父标签的样式,但是继承的权重为0（文字相关的颜色、大小等，但是高度不会继承）
+    优先级
+    1、同一个元素的标签和类名等（继承过来的或者通配符选择器[权重为0 ]《元素选择器《类选择器、伪类选择器《ID选择器《行泪样式《！import[加在选择器的样式后面加]）
+ -->
+    <!-- 权重的计算
+    1、复合选择器有权重的叠加问题(两个标签的权重大于一个权重)
+    li（1） 和 ul>li（2） 
+    2、a:hover(3)
+    -->
+
+    <ul>
+        <li>博士后</li>
+        <li>博士</li>
+        <li>研究生</li>
+        <li>本科生</li>
+        <li>中学生</li>
+    </ul>
+</body>
+
+</html>

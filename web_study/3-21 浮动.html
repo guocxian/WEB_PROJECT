@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clear {
+            clear: both;
+        }
+        .clear1::after{
+            content: '';
+            display: block;
+        }
+        .clear1{
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 网页布局的三种方式：标准流、浮动、定位 -->
+    1、浮动就可以让快级元素横向显示，标准流管理竖向排列
+    2、浮动的三个特性：
+    A浮动会脱离标准流（脱标。不在保留原来的位置，其他的元素占有原来的元素的位置）
+    B浮动的元素会在一行内显示且顶部对齐
+    C不管是行内元素，块元素，浮动的之后具有行内块的特性（行内元素就不需要转化为块级元素了）
+    3、浮动的元素经常有一个标准流的父亲
+    便于管理浮动的元素
+    4、清除浮动(父级没有高度，子盒子浮动了，影响下面的布局了)
+    A加一个块级标签(额外标签)，清除掉浮动
+    <div class="clear"></div>
+    B给父元素添加：overflow:hidden
+    C：after伪元素法
+    <div class="clear1"></div>
+    D.clear1::after，.clear1::before双伪元素
+
+</body>
+</html>

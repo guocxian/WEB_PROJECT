@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-26</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- css选择器
+        1 标签选择器 p,div,li
+        2 类选择器 .类的名字（开发最常用的）
+        多类名选择器
+        多类名的使用场景：重复利用公共的代码
+        3 id选择器 #id名字 标签只能调用一次，不能重复使用
+        4 通配符选择器 * 选中页面所有的标签
+     -->
+    <style>
+        h4 {
+            /* color: brown;
+            font-size: 30px;
+            font-family: 'microsoft  yahei',Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: italic;  */
+            /* 下面必须有严格的顺序 斜体 粗细 大小 字体类型  斜体和粗细可以不写*/
+            font: italic 400 30px 'microsoft yahei';
+        }
+        /* 文本属性
+        1 颜色 color
+        color: green
+        color: #FF0000
+        color: rgb(0,0,0)
+        2 对齐 text-align
+        只能水平对齐 左  中   右
+        3 装饰线 text-decoration
+        underline,line-through ,over-line ,none
+        4 文本缩进 text-indent
+        text-indent:20px （2em）首行缩进多少
+        5 行间距 文字+上下间距
+
+        */
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+    <h4>青春不常在，抓紧谈恋爱</h4>
+    <table width = '700' >
+        <tr>
+            <td>性别:</td>
+            <td>
+                <input type="radio" name="sex" id="nan"><label for="nan">男</label> 
+                <input type="radio" name="sex" id="nv"><label for="nv">女</label> 
+            </td>
+        </tr>
+        <tr>
+            <td>生日:</td>
+            <td>
+                <select name="" id="">
+                    <option value="">--请选择你的生日年份--</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--请选择你的生日月份--</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--请选择你的生日天数--</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区：</td>
+            <td><input type="text" value="四川巴中"></td>
+        </tr>
+        <tr>
+            <td>婚姻状况:</td>
+            <td>
+                <input type="radio" name="hunyin" id="yihun"> <label for="yihun">已婚</label> 
+                <input type="radio" name="hunyin" id="weihun" checked="checked"><label for="weihun">未婚</label> 
+                <input type="radio" name="hunyin" id="lihun"> <label for="lihun">离婚</label> 
+            </td>
+ 
+        </tr>
+        <tr>
+            <td>学历：</td>
+            <td><input type="text" value="请输入你的学历"></td>
+        </tr>
+        <tr>
+            <td>你喜欢的类型:</td>
+            <td>
+                <input type="checkbox" name="love" checked="checked">妩媚的
+                <input type="checkbox" name="love">可爱的
+                <input type="checkbox" name="love">小鲜肉
+                <input type="checkbox" name="love">成熟的
+                <input type="checkbox" name="love">阳光的
+            </td>
+        </tr>
+        <tr>
+            <td>自我介绍:</td>
+            <td>
+                <input type="texarea" value="自我介绍">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="免费注册">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="#">我是会员，立即登录</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h5>我承诺</h5>
+                <ul>
+                    <li>年满18岁</li>
+                    <li>抱真诚的态度</li>
+                    <li>真诚寻找另一半</li>
+                </ul>
+            </td>
+    
+        </tr>
+    </table>
+</body>
+</html>
