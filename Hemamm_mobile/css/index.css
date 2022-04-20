@@ -1,0 +1,36 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 1200px;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+header {
+  height: 2.1333rem;
+  border: 0.0267rem solid #EAEAEA;
+  font-size: 0.9333rem;
+  color: #1C1C1C;
+  line-height: 2.1333rem;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav .item {
+  width: 33%;
+  text-align: center;
+  font-size: 0.6667rem;
+}
+.nav .item img {
+  width: 3.7067rem;
+  height: 3.7067rem;
+  margin: 0 auto;
+}
